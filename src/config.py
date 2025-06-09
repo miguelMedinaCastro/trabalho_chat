@@ -9,4 +9,3 @@ HOST_SERVER = os.getenv("HOST")
 HOST_CLIENT = os.getenv("")
 PORT = int(os.getenv("PORT"))
 FORMAT = 'utf-8'
-# ADDR = (HOST, PORT)

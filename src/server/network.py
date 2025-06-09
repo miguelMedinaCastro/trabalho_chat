@@ -1,13 +1,13 @@
 from ..lib import socket, threading
-from ..config import HOST, PORT
+from ..config import HOST_SERVER, PORT
 from .client_handler import handle_clients
 
 def start_server():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind((HOST, PORT))
+    server.bind((HOST_SERVER, PORT))
     server.listen()
 
-    print(f"[Listening] in {HOST}: {PORT}")
+    print(f"[Listening] in {HOST_SERVER}: {PORT}")
 
     while True:
         conn, addr = server.accept()

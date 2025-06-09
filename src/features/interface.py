@@ -1,5 +1,5 @@
 from ..lib import sys
-from .util import create_group, enter_group, list_groups, leave_group
+from .util import create_group, enter_group, list_groups
 
 def interface(client, user_name):
     while True:
