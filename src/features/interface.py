@@ -7,7 +7,7 @@ def interface(client, user_name):
         print("1. Create Group")
         print("2. Enter a group")
         print("3. List Groups")
-        print("Enter. Log out")
+        print("4. Enter. Log out")
 
         response = int(input("Choose: "))
         
@@ -18,7 +18,7 @@ def interface(client, user_name):
                 enter_group(client, user_name)
             case 3:
                 list_groups(client)
-            case _:
+            case 4:
                 sys.exit("see you next time :)")
 
     
